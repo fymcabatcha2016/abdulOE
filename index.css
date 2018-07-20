@@ -1,110 +1,31 @@
-body{
-	background:#333;
-	padding-top:50px;
-	>p {
-		color:grey;
-		text-align:center;
-		margin:0 auto 30px;
-		width:300px;
-		max-width:100%;
-	}
+#calculator{
+    width: 400px;
+    margin: auto;
+    border: 5px solid darkgray;
+    margin-top: 10%;
+    border-radius: 30px;
+    padding: 20px;
+    height: 600px;
 }
 
-footer{
-	margin-top:15px;
-	color:#ececec;
-	text-align:center;
-	font-weight:300;
-	p{
-		margin:0;
-	}
-	span, a{
-		color:#4fcbcc;
-	}
-	a:hover{
-		text-decoration:none;
-		color:white;
-	}
+.screen {
+    border: 1px solid darkgray;
+    border-radius: 15px;
 }
-#calculator{
-	box-shadow:0 4px 8px rgba(0,0,0,0.3);
-	overflow:hidden;
-	width:300px;
-	max-width:100%;
-	background:white;
-	margin:0 auto;
-	.screen{
-		min-height:150px;
-		background:white;
-		box-shadow:2px 2px 6px rgba(0,0,0,0.3);
-		position:relative;
-		z-index:10;
-		padding:15px;
-		p{
-			margin:0;
-			text-align:right;
-			word-break:break-all;
-			&#history{
-				color:#a3adb6;
-				font-size:14px;
-				margin-bottom:10px;
-				span{
-					margin:0 5px;
-					color:#4fcbcc;
-					font-weight:700;
-				}
-			}
-			&#current{
-				color:#2c4053;
-				font-size:40px;
-				line-height:40px;
-			}
-		}
-	}
-	.buttons{
-		overflow:hidden;
-		button{
-			width:25%;
-			height:60px;
-			margin:0;
-			float:left;
-			border-top:1px solid #ececec;
-			border-left:1px solid #ececec;
-			border-bottom:transparent;
-			border-right:transparent;
-			color:#2c4053;
-			font-family:Roboto;
-			font-size:18px;
-			background:white;
-			cursor:pointer;
-			transition:all 0.3s;
-			&:hover, &.down, &:active, &:focus{
-				background:darken(#ffffff, 10%);
-				outline:none;
-			}
-			&.double{
-				width:50%;
-			}
-			&.grey{
-				background:#f4f9ff;
-				&:hover, &.down, &:active, &:focus{
-					background:darken(#f4f9ff, 10%);
-				}
-			}
-			&.blue{
-				background:#2c4053;
-				color:#ffffff;
-				&:hover, &.down, &:active, &:focus{
-					background:darken(#2c4053, 10%);
-				}
-			}
-			&.green{
-				background:#4fcbcc;
-				color:#ffffff;
-				&:hover, &.down, &:active, &:focus{
-					background:darken(#4fcbcc, 10%);
-				}
-			}
-		}
-	}
+
+p#history {
+    height: 25px;
+    color: gray;
+    text-align: right;
+    font-size: 23px;
+    margin: 10px 20px 0px 0px;
+}
+
+
+p#current {
+    height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 45px;
+    margin: 10px 10px 20px 0px;
 }
