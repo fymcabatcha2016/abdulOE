@@ -7,7 +7,6 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecepieComponent } from './recepie/recepie.component';
 import { RecepieListComponent } from './recepie/recepie-list/recepie-list.component';
 import { RecepieDetailsComponent } from './recepie/recepie-details/recepie-details.component';
-import { RecepieItemsComponent } from './recepie/recepie-list/recepie-items/recepie-items.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
     RecepieComponent,
     RecepieListComponent,
     RecepieDetailsComponent,
-    RecepieItemsComponent,
     ShoppingListEditComponent
   ],
   imports: [

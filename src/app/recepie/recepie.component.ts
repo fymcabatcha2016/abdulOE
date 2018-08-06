@@ -12,4 +12,6 @@ export class RecepieComponent implements OnInit {
   ngOnInit() {
   }
 
+  add(){}
+
 }
