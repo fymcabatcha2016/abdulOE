@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-recepie-list',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recepie-list.component.css']
 })
 export class RecepieListComponent implements OnInit {
+
+  @Output() itemClicked = new EventEmitter<any>();
 
   defimg: string = "/assets/food_logo.png"
   recipes :  any = [{
@@ -24,9 +26,14 @@ export class RecepieListComponent implements OnInit {
   imgUrl : "https://simpleindianrecipes.com/portals/0/sirimages/Medhu-Vadai-M.jpg",
   desc:"medu vada is one of my favorite snack .Medu vada is one snack i loved as a kid and still do. i especially like the crispy and fluffy medu vada dunked in hot sambar with coconut chutney by the side. the combo of vada sambar with coconut chutney is very famous and taste awesome. you can enjoy medu vadas with "
 }];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onItem(pos){    
+    this.itemClicked.emit(this.recipes[pos]);
   }
 
 }

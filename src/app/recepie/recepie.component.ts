@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecepieComponent implements OnInit {
 
+	isListClickedVar = false;
+	itemdata : any;
   constructor() { }
 
   ngOnInit() {
   }
 
   add(){}
+
+  onItemCLicked(item){
+  	this.isListClickedVar = true;
+  	this.itemdata = item;
+  	
+  }
+
 
 }

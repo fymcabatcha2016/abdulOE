@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-recepie-details',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecepieDetailsComponent implements OnInit {
 
+	private _item : any;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
+  get item(){
+		return this._item;
+	}
+
+	@Input()
+	set item(n){		
+		this._item = n;
+	}
+
 
 }
