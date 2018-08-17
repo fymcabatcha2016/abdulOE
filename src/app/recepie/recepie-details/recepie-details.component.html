@@ -8,8 +8,20 @@
 	<br>
 	<h4>Ingrediants</h4>
 	<ul>
-		<li>1</li>
-		<li>2</li>
+		<li>Tomato &[qty]<span class="badge badge-dark">{{item?.ingred.Tomato}}</span></li>
+		<li>Potato [qty]<span class="badge badge-dark">{{item?.ingred.Potato}}</span></li>
+		<li>Coconut [qty]<span class="badge badge-dark">{{item?.ingred.Coconut}}</span></li>
+		<li>Rice [grams]<span class="badge badge-dark">{{item?.ingred.Rice}}</span></li>
 	</ul>
 	</div>
+	<br>
+	 <div class="dropdown text-left">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Manage
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Add</a>
+    <a class="dropdown-item" href="#">Delete</a>
+  </div>
+</div>
 </div>
